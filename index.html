@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recomendador de Jogos</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script&gt;
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   <style>
     .box {
-      width: 850px;
+      width: 800px;
       margin: 20px auto;
       padding: 20px;
       border: 2px solid #4c0073;
@@ -19,6 +20,7 @@
 
     h2 {
       color: #4c0073;
+      font-size: 25px;
     }
 
     span, input, label {
@@ -49,7 +51,7 @@
 <body>
   <div class="box">
     <h2>Recomendador de Jogos</h2>
-   
+    
     <div class="input-container">
       <span>Sua idade:</span>
       <input id="idadeInput" type="number" value="5" />
@@ -71,12 +73,12 @@
 
       // Função para exibir o jogo com base na idade
       function geraRecomendacao(idade) {
-        if (idade == 15) {
-          gameIframe.src = "https://scratch.mit.edu/projects/65710744/embed&quot;;
+        if (idade == 14) {
+          gameIframe.src = "https://scratch.mit.edu/projects/1073615209/embed";
           gameIframe.classList.remove('hidden');
           statusMessage.textContent = "Bom jogo!";
-        } else if (idade == 14) {
-          gameIframe.src = "https://scratch.mit.edu/projects/712511942/embed&quot;;
+        } else if (idade == 16) {
+          gameIframe.src = "https://scratch.mit.edu/projects/712511942/embed";
           gameIframe.classList.remove('hidden');
           statusMessage.textContent = "Bom jogo!";
         } else {
@@ -103,3 +105,4 @@
   </div>
 </body>
 </html>
+
